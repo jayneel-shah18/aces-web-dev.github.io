@@ -1,0 +1,168 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.title{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.title h1{
+  color: white
+
+}
+.logo{
+  width: 25%;
+  height: 13%;
+  top: 0;
+  left: 0;
+
+}
+
+.title h2{
+  color: #ddd;
+}
+
+body {
+  margin: 0px;
+  padding: 350px;
+  background-image: url('giphy.gif'),linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5));
+  background-size: contain;
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat;  
+}
+.topnav{
+top: 0;
+right: 0;
+list-style-type: none;
+font-family: serif;
+width: 100%;
+}
+.topnav {
+position: absolute;
+background-color: rgb(10, 1, 29);
+overflow: hidden;
+}
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+.topnav a.active {
+background-color: rgb(39, 181, 206);
+color: white;
+}
+.topnav .icon {
+display: none;
+}
+
+body {
+  background-color: #12172b;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 20px 40px;
+  color: white;
+}
+
+.heading {
+  font-size: 60px;
+  color: white;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profiles {
+  display: flex;
+  gap: 48px;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.profile {
+  flex-basis: 260px;
+}
+
+.profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.profile:hover .profile-img {
+  filter: grayscale(0);
+}
+
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ccc;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
